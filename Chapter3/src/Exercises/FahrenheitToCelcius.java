@@ -20,15 +20,15 @@ public class FahrenheitToCelcius {
 		System.out.println("What is the temperature in the afternoon? ");
 		tempAfternoon = input.nextInt();
 		
-		displayTemp(tempMorning);
-		displayTemp(tempNoon);
-		displayTemp(tempAfternoon);
+		displayTemp(tempMorning, 8);
+		displayTemp(tempNoon, 12);
+		displayTemp(tempAfternoon, 5);
 	}
-	public static void displayTemp(int tempMorning)
+	public static void displayTemp(int tempMorning, int time)
 	{
-		int tempC;
-		tempC = (tempMorning - 32) * 5 / 9;
-		System.out.println("The morning temp is " + tempC + " degrees celcius");
+		double tempC;
+		tempC = (tempMorning - 32) / 1.8;
+		System.out.println("The temp at "+ time + " is " + tempC + " degrees celcius");
 	}
 
 }
