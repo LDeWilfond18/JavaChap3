@@ -15,7 +15,7 @@ public class NumbersDemo {
 		System.out.println("Enter your x value >> ");
 		x = input.nextInt();
 		System.out.println("Enter your y value >> ");
-		y = input.nextInt()
+		y = input.nextInt();
 		displayNumberPlusFive(x, y);
 		displayTwiceTheNumber(x, y);
 		displayNumberSquared(x, y);
